@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector:'custom-hello',
@@ -6,14 +6,15 @@ import { Component } from '@angular/core';
   styleUrls:['./hello.component.css']
 })
 export class HelloComponent{
-public name:string;
-public lastname:string;
-public fullname:string;
+ @Input() name:string;
+// public name:string;
+// public lastname:string;
+// public fullname:string;
 
     constructor(){
-      this.name = 'Ruddy Enmanuel'
-      this.lastname = 'Cruceta Mateo'
-      this.fullname  = this.name + ' ' + this.lastname;
+      // this.name = 'Ruddy Enmanuel'
+      // this.lastname = 'Cruceta Mateo'
+      // this.fullname  = this.name + ' ' + this.lastname;
   }
 
 }
