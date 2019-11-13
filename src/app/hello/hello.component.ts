@@ -6,5 +6,14 @@ import { Component } from '@angular/core';
   styleUrls:['./hello.component.css']
 })
 export class HelloComponent{
+public name:string;
+public lastname:string;
+public fullname:string;
+
+    constructor(){
+      this.name = 'Ruddy Enmanuel'
+      this.lastname = 'Cruceta Mateo'
+      this.fullname  = this.name + ' ' + this.lastname;
+  }
 
 }
