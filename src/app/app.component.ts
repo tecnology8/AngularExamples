@@ -8,4 +8,7 @@ import { Component } from '@angular/core';
 export class AppComponent  {
   //name = 'Angular';
   public myName:string = "Ruddy Cruceta";
+  onSayHello(message){
+   console.log(message);
+  }
 }
