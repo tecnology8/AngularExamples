@@ -5,4 +5,5 @@
   </div>
   <br/>
 <custom-hello #myHelloComponent [name]="myName" (sayHello)="onSayHello($event)"></custom-hello>
+<custom-hello *ngFor="let greetingName of [John, Peter]" [name]="greetingName"></custom-hello>
 </div>

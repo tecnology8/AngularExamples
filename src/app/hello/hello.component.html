@@ -2,6 +2,6 @@
   <input type="text" [(ngModel)]="inputName">
   <button (click)="addName()">Add Name</button>
 </div>
-<p (click)="onNameClick()">
-  Hello {{name}}!
+<p *ngFor="let item of nameList; index as i" (click)="onNameClick()">
+  {{i}} - Hello {{name}}!
   </p>
