@@ -8,7 +8,8 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
 export class HelloComponent{
     @Input() name:string;
     @Output() sayHello:EventEmitter<string> = new EventEmitter<string>();
-
+    public nameList:Array<string> = [];
+    public inputName:string = 'Angel';
     constructor(){
   }
 
@@ -16,5 +17,15 @@ export class HelloComponent{
       this.sayHello.emit('Hello!');
       }
 
+    addName(){
+      this.nameList.push(this.inputName);
+      this.inputName = '';
+      console.log(this.nameList);
+    }
+  updateInputName(event:any){
+    this.inputName = event.target.value;
+    console.log(this.inputName);
+  }
 
+  
 }
