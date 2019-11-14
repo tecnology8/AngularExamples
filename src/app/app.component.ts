@@ -8,10 +8,20 @@ import { Component } from '@angular/core';
 export class AppComponent  {
   //name = 'Angular';
   public myName:string = "Ruddy Cruceta";
+  public titleStyle:{};
+  public counter = 0;
   onSayHello(message){
    console.log(message);
+   this.counter++;
+   this.updateTitleStyles();
   }
 
+updateTitleStyles(){
+  this.titleStyle={
+   'margin-top':'40px',
+   'color': this.counter < 3 ? 'green' : 'goldenrod'
+  }
+}
   updateNameClasses(name:string){
     return{
       'error': name.length <= 3,
