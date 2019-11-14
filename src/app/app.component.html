@@ -1,5 +1,5 @@
 <div style="text-align:center">
-  <h1>Angular Rocks</h1>
+  <h1  [style.font-size.em]="myHelloComponent.nameList.length > 0 ? 2 : 1.5">Angular Rocks</h1>
   <div [class.hidden]="myHelloComponent.inputName.length == 0">
     Writting '{{myHelloComponent.inputName}}' in HelloComponent
   </div>
