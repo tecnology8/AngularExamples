@@ -1,9 +1,8 @@
 <div style="text-align:center">
   <h1  [style.font-size.em]="myHelloComponent.nameList.length > 0 ? 2 : 1.5">Angular Rocks</h1>
-  <!-- <div [class.hidden]="myHelloComponent.inputName.length == 0">
-    Writting '{{myHelloComponent.inputName}}' in HelloComponent
-  </div> -->
+  <div [class.hidden]="myHelloComponent.inputName.length == 0">
+    <span [ngClass]="updateNameClasses(myHelloComponent.inputName)">  Writting '{{myHelloComponent.inputName}}'</span> in HelloComponent
+  </div>
   <br/>
 <custom-hello #myHelloComponent [name]="myName" (sayHello)="onSayHello($event)"></custom-hello>
-<!-- <custom-hello *ngFor="let greetingName of [John, Peter]" [name]="greetingName"></custom-hello> -->
 </div>
