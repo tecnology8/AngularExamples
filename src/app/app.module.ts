@@ -5,8 +5,8 @@ import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { HelloComponent } from './hello/hello.component';
 import { UpperCapitalPipe } from './hello/upper-capital.pipe';
-
 import { GreetingsService } from './greetings.service';
+import { ContactsComponent } from './contacts-list.component';
 
 @NgModule({
   imports:[ BrowserModule, FormsModule ],
