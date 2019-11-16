@@ -10,7 +10,7 @@ import { ContactsComponent } from './contacts-list.component';
 
 @NgModule({
   imports:[ BrowserModule, FormsModule ],
-  declarations: [ AppComponent, HelloComponent, UpperCapitalPipe ],
+  declarations: [  AppComponent, HelloComponent, UpperCapitalPipe ],
   providers:    [ GreetingsService ],
   bootstrap:    [ AppComponent ]
 })
